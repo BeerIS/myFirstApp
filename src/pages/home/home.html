@@ -1,14 +1,31 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Be Myself
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="showhead">
+    <img src="https://ionicframework.com/img/ionic-logo-blog.png" >
+    <p>Welcome to my site.</p>
+  </div>
+  <ion-list>
+    <ion-item (click)="goToAbout()">
+      <ion-icon name="contact" item-start></ion-icon>About Me
+    </ion-item>
+    <ion-item>
+      <ion-icon name="people" item-start></ion-icon>Friend List
+    </ion-item>
+    <ion-item>
+      <ion-icon name="image" item-start></ion-icon>Favorite Places
+    </ion-item>
+    <ion-item>
+      <ion-icon name="planet" item-start></ion-icon>Social Media
+    </ion-item>
+    <ion-item>
+      <ion-icon name="apps" item-start></ion-icon>Image Slides
+    </ion-item>
+  </ion-list>
 </ion-content>
